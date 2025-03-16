@@ -19,7 +19,7 @@ export default function Socials() {
             {
                 socials.map(social => 
                     <li key={social.href} className={style.social}>
-                        <a href={social.href}>
+                        <a href={social.href} target="_blank">
                             <img src={social.img} alt={social.name}/>
                         </a>
                     </li>

@@ -37,7 +37,7 @@ function Bio() {
             and ~5 years of experience in C.
         </p>
         <p>
-            I'm also the creator of <a href="https://congress.csi.miamioh.edu">Who Did I Elect?</a>, a site to provide voters reliable, non-partisan 
+            I'm also the creator of <a href="https://congress.csi.miamioh.edu" target="_blank">Who Did I Elect?</a>, a site to provide voters reliable, non-partisan 
             information regarding their U.S. Congressmen.
         </p>
     </section>
