@@ -11,10 +11,10 @@ const links = [
         name: "Work Experience",
         href: "/experience"
     },
-    {
-        name: "Portfolio",
-        href: "/portfolio"
-    },
+    // {
+    //     name: "Portfolio",
+    //     href: "/portfolio"
+    // },
     {
         name: "Resume",
         href: "/resume"
