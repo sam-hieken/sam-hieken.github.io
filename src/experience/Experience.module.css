@@ -1,0 +1,62 @@
+.workExperiences,.workExperienceCompanies {
+    padding: 0;
+    margin: 0;
+
+    display: flex;
+    flex-direction: column;
+
+    --company-gap: 2rem;
+}
+
+.workExperienceCompanies {
+    gap: var(--company-gap);
+    width: 60%;
+    margin: 0 auto;
+}
+
+@media (max-width: 1024px) {
+    .workExperienceCompanies {
+        width: 100%;
+    }
+}
+
+
+.workExperience,.workExperienceCompany {
+    list-style-type: none;
+    display: block;
+}
+
+.workExperienceCompany {
+    padding-bottom: var(--company-gap);
+    border-bottom: 1px solid var(--link-color);
+}
+
+.workExperienceCompany:last-child {
+    padding-bottom: 0;
+    border-bottom: none;
+}
+
+h2, h3 {
+    margin: 0;
+}
+
+h2 {
+    font-weight: 900;
+}
+
+h3 {
+    margin-top: 0.75rem;
+    margin-bottom: 0.5rem;
+
+    font-weight: 700;
+}
+
+.experienceLocation {
+    display: flex;
+    justify-content: space-between;
+}
+
+.experienceDate {
+    font-weight: 600;
+    margin-bottom: 0.5rem;
+}

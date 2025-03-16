@@ -1,8 +1,9 @@
-import { Route, BrowserRouter, Routes } from "react-router-dom";
+import { Route, BrowserRouter, Routes, href } from "react-router-dom";
 import Header from "./layout/Header";
 import Home from "./home/Home";
 import Footer from "./layout/Footer";
 import Resume from "./resume/Resume";
+import Experience from "./experience/Experience";
 
 const routes = [
     {
@@ -14,6 +15,11 @@ const routes = [
         name: "Resume",
         href: "/resume",
         component: Resume
+    },
+    {
+        name: "Work Experience",
+        href: "/experience",
+        component: Experience
     }
 ];
 
