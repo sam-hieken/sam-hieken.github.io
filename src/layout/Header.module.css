@@ -9,7 +9,8 @@
 
     /* border-bottom: 2px solid var(--link-color); */
 
-    box-shadow: 0 3px 15px -2px var(--link-color);
+    background-color: var(--hf-bg-color);
+    box-shadow: 0 0px 12px 2px var(--link-color);
 }
 
 .name {

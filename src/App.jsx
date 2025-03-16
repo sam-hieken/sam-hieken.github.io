@@ -29,13 +29,15 @@ const routes = [
 export default function App() {
     return <HashRouter>
         <Header/>
-        <Routes>
-            {
-                routes.map((route, i) => 
-                    <Route key={i} path={route.href} element={<route.component/>}/>
-                )
-            } 
-        </Routes>
+        <main>
+            <Routes>
+                {
+                    routes.map((route, i) => 
+                        <Route key={i} path={route.href} element={<route.component/>}/>
+                    )
+                } 
+            </Routes>
+        </main>
         <Footer/>
     </HashRouter>
 }

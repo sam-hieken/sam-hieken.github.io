@@ -5,9 +5,9 @@ import style from './Resume.module.css';
  * Resume page
  */
 export default function Resume() {
-    return <main className={style.resumeContainer}>
+    return <div className={style.resumeContainer}>
         <ResumeDocument/>
-    </main> 
+    </div> 
 }
 
 function ResumeDocument() {

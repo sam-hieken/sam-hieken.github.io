@@ -1,0 +1,23 @@
+.footer {
+    background-color: var(--hf-bg-color);
+
+    height: 100px;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    
+    box-shadow: 0 0px 12px 2px var(--link-color);
+
+    font-size: 0.75rem;
+}
+
+.footer address {
+    font-style: normal;
+    text-align: center;
+}
+
+.footer span {
+    margin: 0;
+}

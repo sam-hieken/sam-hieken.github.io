@@ -22,12 +22,12 @@ const interviews = [
  * Home page
  */
 export default function Home() {
-    return <main>
+    return <>
         <h1>Sam Hieken</h1>
         <Picture/>
         <Bio/>
         <Interviews/>
-    </main>
+    </>
 }
 
 function Picture() {

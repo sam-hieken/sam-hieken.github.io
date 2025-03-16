@@ -37,9 +37,10 @@ const workExperience = [
 ]
 
 export default function Experience() {
-    return <main>
+    return <>
+        <h1>Work Experience</h1>
         <ExperienceList/>
-    </main>
+    </>
 }
 
 function ExperienceList() {

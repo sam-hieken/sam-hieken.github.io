@@ -1,5 +1,8 @@
 :root {
     --bg-color: #242424;
+    /* Header footer background color */
+    --hf-bg-color: black;
+
     --default-font-color: #ddd;
     --link-color: #c9ab00;
     
@@ -8,7 +11,7 @@
     font-weight: 400;
 
     color: var(--default-font-color);
-    background-color: var(--bg-color);
+    background-color: var(--hf-bg-color);
 
     font-synthesis: none;
     text-rendering: optimizeLegibility;
@@ -18,10 +21,27 @@
 
 body {
     margin: 0;
+    position: relative;
+}
+
+#root {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
 }
 
 main {
+    position: relative;
+    z-index: 1;
     padding: 3rem 4rem;
+    background-color: var(--bg-color);
+
+    flex-grow: 1;
+}
+
+#root > header, #root > footer {
+    position: relative;
+    z-index: 2;
 }
 
 a {
