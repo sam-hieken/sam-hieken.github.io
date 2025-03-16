@@ -1,0 +1,29 @@
+:root {
+    --bg-color: #242424;
+    --default-font-color: #ddd;
+    --link-color: #c9ab00;
+    
+    font-family: system-ui, Avenir, Helvetica, Arial, sans-serif;
+    line-height: 1.5;
+    font-weight: 400;
+
+    color: var(--default-font-color);
+    background-color: var(--bg-color);
+
+    font-synthesis: none;
+    text-rendering: optimizeLegibility;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+}
+
+body {
+    margin: 0;
+}
+
+main {
+    padding: 3rem 4rem;
+}
+
+a {
+    color: var(--link-color);
+}

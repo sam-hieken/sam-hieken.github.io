@@ -1,0 +1,17 @@
+.picture {
+    display: block;
+    margin: 2rem auto;
+}
+
+h1 {
+    font-size: 1.8rem;
+    font-weight: 600;
+    margin: 0;
+    text-align: center;
+}
+
+.bio {
+    font-size: 1rem;
+    margin: 0 auto;
+    max-width: 60rem;
+}
