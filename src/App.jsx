@@ -1,4 +1,4 @@
-import { Route, BrowserRouter, Routes, href } from "react-router-dom";
+import { Route, BrowserRouter, Routes, href, HashRouter } from "react-router-dom";
 import Header from "./layout/Header";
 import Home from "./home/Home";
 import Footer from "./layout/Footer";
@@ -27,7 +27,7 @@ const routes = [
  * Main component of the application
  */
 export default function App() {
-    return <BrowserRouter>
+    return <HashRouter>
         <Header/>
         <Routes>
             {
@@ -37,5 +37,5 @@ export default function App() {
             } 
         </Routes>
         <Footer/>
-    </BrowserRouter>
+    </HashRouter>
 }
