@@ -33,7 +33,7 @@ body {
 main {
     position: relative;
     z-index: 1;
-    padding: 3.5rem 4rem;
+    padding: 3.5rem 4rem 5rem 4rem;
     background-color: var(--bg-color);
 
     flex-grow: 1;

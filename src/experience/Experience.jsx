@@ -71,7 +71,7 @@ function ExperienceItem({ experience }) {
     return (
         <li className={style.workExperience}>
             <h3>{experience.position}</h3>
-            <div className={style.experienceLocation}>
+            <div className={style.experienceDateLocation}>
                 <i>{experience.location}</i>
                 <div className={style.experienceDate}>
                     <JobDate yearMonth={experience.startDate}/> 
@@ -89,7 +89,7 @@ function ExperienceItem({ experience }) {
     )
 }
 
-function JobDate({ yearMonth }) {
+export function JobDate({ yearMonth }) {
     if (!yearMonth) {
         const today = new Date();
 

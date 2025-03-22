@@ -1,0 +1,53 @@
+.projects {
+    padding: 0;
+    margin: 0;
+
+    display: flex;
+    flex-direction: column;
+
+    --project-gap: 2rem;
+}
+
+.projects {
+    gap: var(--project-gap);
+    width: 60%;
+    margin: 0 auto;
+}
+
+@media (max-width: 1024px) {
+    .workExperienceCompanies {
+        width: 100%;
+    }
+}
+
+
+.project {
+    list-style-type: none;
+    display: block;
+
+    padding-bottom: var(--project-gap);
+    border-bottom: 1px solid var(--link-color);
+}
+
+.project:last-child {
+    padding-bottom: 0;
+    border-bottom: none;
+}
+
+.project h2 {
+    margin-top: 0px; 
+
+    font-size: 1.35rem;
+    font-weight: 700;
+
+    margin-bottom: 0.4rem;
+}
+
+.projectDate {
+    display: inline-block;
+    margin-bottom: 0.4rem;
+}
+
+.projectAccomplishment {
+    list-style: square;
+}
