@@ -30,6 +30,27 @@ const projects = [
             "Created a small transformer-based machine learning model to classify ",
             "Used NLP to classify a piece of news (tailored towards financial news) as either positive, negative, or neutral"
         ]
+    },
+    {
+        name: "Subprime Lending Project",
+        link: null,
+        startDate: "2022-04",
+        endDate: "2023-04",
+        accomplishments: [
+            "Worked on project to automate underwriting of subprime loans",
+            "Designed full stack web application; stack includes React, Spring WebFlux, Postgres, Keycloak, Plaid, Dwolla, and Microbilt"
+        ]
+    },
+    {
+        name: "ChatGPT Detection Research",
+        link: null,
+        startDate: "2022-01",
+        endDate: "2022-08",
+        accomplishments: [
+            "Trained model attempting to distinguish AI generated text from human generated text",
+            "Models leveraged included BERT, GPT-2, ChatGPT, and T5",
+            `Utilized multiple NVIDIA Tesla v100 GPUs on Miami University's "RedHawk" High-Performance Computing Cluster`
+        ]
     }
 ]
 
