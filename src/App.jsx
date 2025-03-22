@@ -4,6 +4,7 @@ import Home from "./home/Home";
 import Footer from "./layout/Footer";
 import Resume from "./resume/Resume";
 import Experience from "./experience/Experience";
+import Projects from "./projects/Projects";
 
 const routes = [
     {
@@ -20,6 +21,11 @@ const routes = [
         name: "Work Experience",
         href: "/experience",
         component: Experience
+    },
+    {
+        name: "Projects",
+        href: "/projects",
+        component: Projects
     }
 ];
 

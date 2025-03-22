@@ -3,17 +3,28 @@
     margin: 2rem auto;
 }
 
-h1 {
-    font-size: 1.8rem;
-    font-weight: 600;
-    margin: 0;
-    text-align: center;
-}
-
 .bio {
     font-size: 1rem;
     margin: 0 auto;
     max-width: 60rem;
+}
+
+.languageList {
+    padding: 0 25px;
+}
+
+.languageItem {
+    display: list-item;
+
+    margin: 0.5rem;
+}
+
+.languageItem > dt, .languageItem > dd {
+    display: inline;
+}
+
+.languageItem > dd {
+    margin: 0;
 }
 
 /* .bio p:not(.greeting) {

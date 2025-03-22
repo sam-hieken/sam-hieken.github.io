@@ -1,3 +1,4 @@
+import PageHeader from "../util/component/PageHeader";
 import { getMonthName } from "../util/Func";
 import style from "./Experience.module.css";
 
@@ -38,7 +39,7 @@ const workExperience = [
 
 export default function Experience() {
     return <>
-        <h1>Work Experience</h1>
+        <PageHeader>Work Experience</PageHeader>
         <ExperienceList/>
     </>
 }

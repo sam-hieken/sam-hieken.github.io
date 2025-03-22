@@ -1,3 +1,4 @@
+import PageHeader from "../util/component/PageHeader";
 import style from "./Home.module.css";
 
 const graduation = new Date("2025-05-17T00:00:00Z");
@@ -18,12 +19,20 @@ const interviews = [
     }
 ];
 
+const approximateLanguageStartYear = {
+    Java: 2014,
+    SQL: 2019,
+    C: 2020,
+    JavaScript: 2019,
+    Python: 2018
+}
+
 /**
  * Home page
  */
 export default function Home() {
     return <>
-        <h1>Sam Hieken</h1>
+        <PageHeader>Sam Hieken</PageHeader>
         <Picture/>
         <Bio/>
         <Interviews/>
@@ -39,15 +48,37 @@ function Picture() {
 }
 
 function Bio() {
+    const currentYear = new Date().getFullYear();
+    // Convert start year to total years in a clone of approximateLanguageStartYear
+    const totalYears = structuredClone(approximateLanguageStartYear);
+
+    for (const language in totalYears)
+        totalYears[language] = currentYear - totalYears[language];
+    
+
     return <section className={style.bio}>
         <p className={style.greeting}>
             Hello, 
         </p>
         <p>
             Thanks for checking out my website! My name is Sam Hieken, and I'm {studentStatus}. 
-            I have ~10 years of experience programming, including ~10 years of Java, ~6 years of SQL, 
-            and ~5 years of experience in C.
+            I've been programming as a hobby for about ~{totalYears.Java} years, with experience in the following
+            languages:
         </p>
+            
+        <dl className={style.languageList}>
+            {
+                Object.entries(totalYears).map(([language, years]) => 
+                    <div className={style.languageItem} key={language}>
+                        <dt>
+                            <b>{language}</b>:
+                        </dt>&nbsp;
+                        <dd>{years} years</dd>
+                    </div>
+                )
+            }
+        </dl>
+
         <p>
             I'm also the creator of <a href="https://congress.csi.miamioh.edu" target="_blank">Who Did I Elect?</a>, a site to provide voters reliable, non-partisan 
             information regarding their U.S. Congressmen.
@@ -57,7 +88,7 @@ function Bio() {
 
 function Interviews() {
     return <section className={style.interviews}>
-        <h2>See My TV Interviews</h2>
+        <h2>Television Interviews</h2>
         <ul className={style.interviewList}>
             {
                 interviews.map((interview, i) => 
