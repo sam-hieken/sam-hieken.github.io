@@ -1,8 +1,7 @@
 import PageHeader from "../util/component/PageHeader";
 import style from "./Home.module.css";
 
-const graduation = new Date("2025-05-17T00:00:00Z");
-const alumni = graduation < new Date();
+import { alumni } from "../util/Const";
 
 const studentStatus = alumni 
     ? "a recent graduate of Miami University with a Bachelor's degree in Computer Science and a minor in Economics" 
