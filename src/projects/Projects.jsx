@@ -27,7 +27,7 @@ const projects = [
         startDate: "2023-01",
         endDate: "2023-03",
         accomplishments: [
-            "Created a small transformer-based machine learning model to classify ",
+            "Created a small transformer-based machine learning model utilizing Keras (TensorFlow)",
             "Used NLP to classify a piece of news (tailored towards financial news) as either positive, negative, or neutral"
         ]
     },
@@ -48,7 +48,7 @@ const projects = [
         endDate: "2022-08",
         accomplishments: [
             "Trained model attempting to distinguish AI generated text from human generated text",
-            "Models leveraged included BERT, GPT-2, ChatGPT, and T5",
+            "Models leveraged included BERT, GPT-2, ChatGPT, and T5 via HuggingFace's \"Transformers\" library",
             `Utilized multiple NVIDIA Tesla v100 GPUs on Miami University's "RedHawk" High-Performance Computing Cluster`
         ]
     }
