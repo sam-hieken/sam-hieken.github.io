@@ -13,8 +13,9 @@ const workExperience = [
                 endDate: "2024-08",
                 responsibilities: [
                     "Solved production failures and enhanced onboarding capabilities through the redesign of a low code issue tracking system",
-                    "Modernized technology stack. Old architecture based on PowerApps and SharePoint. New architecture based on Next.JS, Spring Boot (Spring Web MVC), PostgreSQL, and AWS EC2",
-                    "Acted as the sole full-stack developer and AWS engineer. Collaborated with business partners to ensure the system fit their needs"
+                    "Modernized the tracking system’s technology stack. Transitioned from a two-tier PowerApps and SharePoint based stack to a new three-tier architecture based on Next.JS, Spring Boot (Web MVC), PostgreSQL, and AWS EC2",
+                    "Maintained issues during development and deployment of the tracking system as the sole full-stack developer and AWS engineer",
+                    "Collaborated with business partners on the Clinical Lab Sciences team to ensure the tracking system met their needs"
                 ]
             }
         ]
@@ -28,9 +29,10 @@ const workExperience = [
                 startDate: "2022-03",
                 endDate: null,
                 responsibilities: [
-                    "Build various Application Programming Interface (API) integrations for Miami University’s IT department",
-                    "Act as administrator on Miami’s data warehouse (MS-SQL). Created “sandbox” tables and stored procedures",
-                    "Utilize low code platform (TeamDynamix iPaaS) and Python"
+                    "Build various API integrations for Miami University’s IT department through a low code iPaaS (Integration Platform as a Service) by TeamDynamix",
+                    "Convert existing ETL pipelines written in Python into low code iPaaS flows", 
+                    "Act as administrator on Miami’s data warehouse (MS-SQL). Responsible for creating sandbox versions of tables and stored procedures",
+                    "Fix issues with existing iPaaS flows written by other interns"
                 ]
             }
         ]
