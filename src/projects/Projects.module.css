@@ -6,16 +6,14 @@
     flex-direction: column;
 
     --project-gap: 2rem;
-}
 
-.projects {
     gap: var(--project-gap);
     width: 60%;
     margin: 0 auto;
 }
 
 @media (max-width: 1024px) {
-    .workExperienceCompanies {
+    .projects {
         width: 100%;
     }
 }
